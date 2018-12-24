@@ -469,9 +469,7 @@ namespace Terminal.Gui {
 				return;
 			if (subviews == null)
 				subviews = new List<View> ();
-
-			if (SuperView != null) 
-				SuperView.SetNeedsLayout();
+			SetNeedsLayout();
 
 			subviews.Add (view);
 			view.container = this;
@@ -518,9 +516,7 @@ namespace Terminal.Gui {
 				return;
 
 			SetNeedsDisplay ();
-
-			if (SuperView != null) 
-				SuperView.SetNeedsLayout();
+			SetNeedsLayout();
 
 			var touched = view.Frame;
 			subviews.Remove (view);
