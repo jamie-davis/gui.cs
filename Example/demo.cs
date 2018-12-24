@@ -1,6 +1,7 @@
 using Terminal.Gui;
 using System;
 using Mono.Terminal;
+using Terminal;
 
 static class Demo {
 	class Box10x : View {
@@ -273,6 +274,7 @@ static class Demo {
 		var menu = new MenuBar (new MenuBarItem [] {
 			new MenuBarItem ("_File", new MenuItem [] {
 				new MenuItem ("Text Editor Demo", "", () => { Editor (top); }),
+				new MenuItem ("Dynamic Demo", "", () => { ShowDynamic (top); }),
 				new MenuItem ("_New", "Creates new file", NewFile),
 				new MenuItem ("_Open", "", Open),
 				new MenuItem ("_Hex", "", () => ShowHex (top)),
@@ -295,12 +297,25 @@ static class Demo {
 			ml.Text = $"Mouse: ({me.X},{me.Y}) - {me.Flags} {count++}";
 		};
 		var test = new Label (3, 18, "Se iniciará el análisis");
+
+		var switchingView = new SwitchingView() {
+			X = 1,
+			Y = 1,
+			Width = Dim.Fill() - 1,
+			Height = 5
+		};
+		
 		win.Add (test);
+		win.Add (switchingView);
 		win.Add (ml);
 
 		// ShowTextAlignments (win);
 		top.Add (win);
 		top.Add (menu);
 		Application.Run ();
+	}
+
+	static void ShowDynamic(Toplevel top) {
+
 	}
 }
