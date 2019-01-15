@@ -1413,8 +1413,7 @@ namespace Terminal.Gui {
 			if (view == null)
 				return;
 
-			if (view.HasFocus)
-				HasFocus = false;
+			HasFocus = false;
 
 			SetNeedsDisplay ();
 			var touched = view.Frame;

@@ -19,8 +19,9 @@
     <Owners>Miguel de Icaza</Owners>
     <Summary>Application framework for creating modern console applications using .NET </Summary>
     <Title>Gui.cs is a framework for creating console user interfaces</Title>
-    <PackageReleaseNotes>0.19.2 Temporaty fix for list view re-selection causing rendering issues.
-0.19.1 Temporaty fix for layout issue on add/remove view.
+    <PackageReleaseNotes>0.19.3 Temporary fix for removed views retaining focus.
+0.19.2 Temporary fix for list view re-selection causing rendering issues.
+0.19.1 Temporary fix for layout issue on add/remove view.
 0.19: PageUpDown updates (GaikwadPratik); Fixes in multi-line labels (hlfrye@gmail.com);  Support Delete char in TextView (Greg Amidon); Prevent empty TextViews from crashing;  Allow TextFields to be updated on the Changed event.
 0.18: Fixes hotkeys for menus (Sang Kil); Fixes RemoveAll for all containers;  Allows Toplevels with no views; Fixes FileDialog layout; Prevent crash in TextView
 0.17: Unix, dynamically load ncurses library to support different configurations, and not require -dev on Linux, various bug fixes.
