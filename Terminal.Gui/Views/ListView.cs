@@ -415,10 +415,13 @@ namespace Terminal.Gui {
 			if (me.Y + top >= source.Count)
 				return true;
 
-			selected = top + me.Y;
-			if (SelectedChanged != null)
-				SelectedChanged();
-			SetNeedsDisplay ();
+			var newSelected = top + me.Y;
+			if (newSelected != selected) {
+				selected = newSelected;
+				if (SelectedChanged != null)
+					SelectedChanged();
+				SetNeedsDisplay ();
+			}
 			return true;
 		}
 	}

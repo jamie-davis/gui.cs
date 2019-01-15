@@ -274,7 +274,6 @@ static class Demo {
 		var menu = new MenuBar (new MenuBarItem [] {
 			new MenuBarItem ("_File", new MenuItem [] {
 				new MenuItem ("Text Editor Demo", "", () => { Editor (top); }),
-				new MenuItem ("Dynamic Demo", "", () => { ShowDynamic (top); }),
 				new MenuItem ("_New", "Creates new file", NewFile),
 				new MenuItem ("_Open", "", Open),
 				new MenuItem ("_Hex", "", () => ShowHex (top)),
@@ -313,9 +312,5 @@ static class Demo {
 		top.Add (win);
 		top.Add (menu);
 		Application.Run ();
-	}
-
-	static void ShowDynamic(Toplevel top) {
-
 	}
 }
