@@ -8,7 +8,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Terminal.Gui", "Terminal.Gu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Designer", "Designer\Designer.csproj", "{1228D992-C801-49BB-839A-7BD28A3FFF0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListRepro", "ListRepro\ListRepro.csproj", "{9A17E056-2F12-40F8-9576-752FDA269012}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListRepro", "ListRepro\ListRepro.csproj", "{9A17E056-2F12-40F8-9576-752FDA269012}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotKeyRepro", "HotKeyRepro\HotKeyRepro.csproj", "{2C918224-939A-4A4D-BCC0-50A392A34835}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,6 +48,14 @@ Global
 		{9A17E056-2F12-40F8-9576-752FDA269012}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9A17E056-2F12-40F8-9576-752FDA269012}.Release|x86.ActiveCfg = Release|Any CPU
 		{9A17E056-2F12-40F8-9576-752FDA269012}.Release|x86.Build.0 = Release|Any CPU
+		{2C918224-939A-4A4D-BCC0-50A392A34835}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C918224-939A-4A4D-BCC0-50A392A34835}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C918224-939A-4A4D-BCC0-50A392A34835}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2C918224-939A-4A4D-BCC0-50A392A34835}.Debug|x86.Build.0 = Debug|Any CPU
+		{2C918224-939A-4A4D-BCC0-50A392A34835}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C918224-939A-4A4D-BCC0-50A392A34835}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C918224-939A-4A4D-BCC0-50A392A34835}.Release|x86.ActiveCfg = Release|Any CPU
+		{2C918224-939A-4A4D-BCC0-50A392A34835}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
